@@ -1,0 +1,1 @@
+I am a computer science undergraduate in China, and this repository is used to store my programming practice projects during the learning process. Most importantly, I use it to document my own growth.
