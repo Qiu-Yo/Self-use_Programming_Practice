@@ -1,12 +1,12 @@
 #include <stdio.h>
-void copy_arr(double target_array[], const double source_array[], size_t array_length)
+void copy_arr(double target_array[], const double source_array[], int array_length)//使用数组作为函数参数
 {
     for (int i = 0; i < array_length; i++)
     {
         target_array[i] = source_array[i];
     }
 }
-void copy_ptr(double *target_array, const double *source_array, size_t array_length)
+void copy_ptr(double *target_array, const double *source_array, int array_length)//使用指针作为函数参数
 {
     for (int i = 0; i < array_length; i++)
     {
@@ -15,7 +15,7 @@ void copy_ptr(double *target_array, const double *source_array, size_t array_len
         source_array++;
     }
 }
-void copy_ptrs(double target_array[], const double source_array[], double *next_element)
+void copy_ptrs(double target_array[], const double source_array[], double *next_element)//使用标记数组结束位置的指针作为参数
 {
     for (; source_array < next_element; source_array++)
     {
